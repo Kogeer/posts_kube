@@ -5,14 +5,14 @@ Requirements:
 - Skaffold (skaffold.dev)
 
 After installed the requirements, but before start the project:  
-####Change the /etc/hosts file:
+#### Change the /etc/hosts file:
 Get minikube IP if use:  
 `<minikubeip>` posts.com  
 
 Mac/Win:  
 127.0.0.1 posts.com
 
-###Project start  
+### Project start  
 $project_root: `skaffold dev  `
 
 If you see, query service crashed after start (because can't reach event bus on start), just restart with command:  
