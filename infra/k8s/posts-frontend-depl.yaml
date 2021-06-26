@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: posts-frontend-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: posts-frontend
+  template:
+    metadata:
+      labels:
+        app: posts-frontend
+    spec:
+      containers:
+        - name: posts-frontend
+          image: kogeer/posts-frontend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-frontend-srv
+spec:
+  selector:
+    app: posts-frontend
+  ports:
+    - name: posts-frontend
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
