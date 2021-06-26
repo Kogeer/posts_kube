@@ -1,4 +1,4 @@
-This project created for testing purposes.
+This project created for learning purposes.
 
 Requirements:  
 - Docker  
