@@ -16,6 +16,6 @@ Mac/Win:
 $project_root: `skaffold dev  `
 
 If you see, query service crashed after start (because can't reach event bus on start), just restart with command:  
-kubectl rollout restart deployment query-depl
+`kubectl rollout restart deployment query-depl`
 
 Just stop with CTRL+C.
