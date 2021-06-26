@@ -1,3 +1,5 @@
+This project created for testing purposes.
+
 Requirements:  
 - Docker  
 - Kubernetes (minikube for Linux users)
